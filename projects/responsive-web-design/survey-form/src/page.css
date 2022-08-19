@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  color: #0C1415;
+}
+
+#container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+#sub-container{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#logo-div {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vw auto;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+#acm-text {
+  font-family: 'Marck Script', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#acm-link {
+  text-decoration: none;
+}
+
+#acm-link:hover {
+  cursor: pointer;
+}
+
+#acm-link:active {
+  color: #0C1415;
+}
+
+#acm-link:visited {
+  color: #0C1415;
+}
+
+main {
+  display: flex;
+  margin: 2vw auto;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 2vw;
+}
+
+#title-group {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(120deg, #7AC5CD 10%, #7A9CCD 50%, #7ACDAC 90% );
+  color: #fff;
+
+  border-bottom-right-radius: 10vw;
+  border-top-left-radius: 10vw;
+}
+
+#title {
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1vw;
+  margin-bottom: 0;
+}
+
+#description {
+  margin-top: 0;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+
+#observations {
+  width: auto;
+  max-width: 79vw;
+  padding: 5vw 5vw 0 3vw;
+}
+
+#observations span {
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#observations ul li {
+  list-style: decimal;
+  text-align: justify;
+}
+
+#survey-form {
+  width: auto;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field-label {
+  font-size: 2rem;
+  color: #0C1415;
+  border-radius: 5%;
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.field {
+  border: none;
+  background: linear-gradient(120deg, #7AC5CD55 10%, #7A9CCD55 50%, #7ACDAC55 90% );
+  border-radius: 2vw;
+  width: 80%;
+}
+
+.field:hover, .field:active {
+  box-shadow: 10px 10px 20px 1px #000;
+  background: linear-gradient(120deg, #7AC5CD85 10%, #7A9CCD85 50%, #7ACDAC85 90% );
+}
+
+.field-grouping {
+  display: flex;
+  flex-direction: column;
+  margin: 2vw 0;
+  align-items: flex-start;
+}
+
+.subfield-label {
+  margin-left: 6vw;
+  color: #0C1415;
+  font-size: 1.2rem;
+}
+
+.input-field {
+  width: 40vw;
+  height: 3vw;
+  color: #0C1415;
+  margin: 1vw auto;
+}
+
+.input-field:focus, .input-field:active {
+  border: none;
+  box-shadow: 1px 1px 2px 1px #000;
+}
+
+.list-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 7vw;
+  margin-top: 1vw;
+}
+
+.option-grouping {
+  display: flex;
+  flex-direction: row;
+}
+
+#comments {
+  width: 40vw;
+  height: 5vw;
+  margin: 1vw auto;
+}
+
+.divider {
+  width: 60vw;
+  margin: 5vw auto;
+  border-bottom: 1vw dotted #7A9CCD;
+}
+
+#submit {
+  margin: 2vw auto;
+  width: 20vw;
+  height: 3vw;
+  border-radius: 4vw;
+  font-family: 'Signika', sans-serif;
+  font-size: 1.3rem;
+  background: linear-gradient(120deg, #7AC5CD85 10%, #7A9CCD85 50%, #7ACDAC85 90% )
+}
+
+#submit:hover {
+  background: #fff;
+  box-shadow: 1px 1px 2px 1px #000;
+}
