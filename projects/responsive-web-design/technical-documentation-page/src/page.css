@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400&display=swap');
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Albert Sans', sans-serif;
+  background-color: #fff;
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+  body{
+    font-size: 1.2rem;
+  }
+
+  #navbar {
+    top: 0 !important;
+    width: 100% !important;
+    height: 40vw !important;
+    padding: 3vw 0 !important;
+  }
+
+  #main-doc {
+    margin: 5vw !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+/* laptop devices */
+@media (min-width: 768px) {
+  body{
+    font-size: 1rem;
+  }
+
+  #navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 300px !important;
+    height: 100% !important;
+  }
+
+  #main-doc {
+    margin: 5vw 20px 5vw 320px !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+#navbar {
+  background-color: #003865;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+#navbar header {
+  margin: 2vw 0;
+  color: #eef8ff;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: #eef8ff;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  width: 80%;
+  text-decoration: none;
+}
+
+.nav-link:not(:last-child) {
+    border-bottom: 5px solid #eef8ff;
+}
+
+#main-doc {
+  background-color: #fff;
+  color: #2f3336;
+}
+
+/* margin and border for sections */
+.main-section:not(:last-child) {
+  border-bottom: 5px dashed #003865;
+  margin-bottom: 20px;
+}
+
+.main-section header {
+  font-size: 2rem;
+}
+
+.main-section header::before {
+  content: '#';
+  color: #0084ee;
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+.main-section p {
+  text-align: justify;
+}
+
+.main-section code {
+  width: auto;
+  height: auto;
+  padding: 2px 5px;
+  background-color: #eef8ff;
+  border-radius: 20%;
+}
+
+/* putting some space at the bottom of each li on Data Types section */
+#Data_Types li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
